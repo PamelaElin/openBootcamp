@@ -1,0 +1,34 @@
+.container{
+    display: flex;
+    font-size: 2rem;
+}
+
+.barra {
+    background-color: rgb(82, 80, 80);
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+
+.principal {  
+    flex-grow: 1;
+    background-color: rgb(164, 121, 204);
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    margin: 2px;
+}
+
+@media (max-width: 640px) {
+    .container {
+        flex-direction: column-reverse;
+        
+    }
+    .barra {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
